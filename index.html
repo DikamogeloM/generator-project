@@ -7,22 +7,25 @@
     <title>AI Generator</title>
   </head>
   <body>
-    <header>
-      <h1>AI Dj Generator</h1>
-    </header>
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter the answer you wish to be generated"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
-      <div>Your answer will show here</div>
-    </main>
+    <div class="container">
+      <header>
+        <h1>AI Dj Generator</h1>
+      </header>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Enter the answer you wish to be generated"
+            autofocus
+            required
+            autocomplete="off"
+            class="instructions"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
+        <div class="dj-answer">Your answer will show here</div>
+      </main>
+    </div>
     <footer>
       This project was coded by
       <a href="https://github.com/DikamogeloM">Dikamogelo Mabusela</a> and it is
@@ -35,6 +38,7 @@
         >Netlify</a
       >
     </footer>
+
     <script src="index.js"></script>
   </body>
 </html>
