@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=Sh, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="style.css" />
     <title>AI Generator</title>
   </head>
@@ -12,10 +13,10 @@
         <h1>AI Dj Generator</h1>
       </header>
       <main>
-        <form>
+        <form id="dj-generator-form">
           <input
             type="text"
-            placeholder="Enter the answer you wish to be generated"
+            placeholder="Enter the question you wish to be generated"
             autofocus
             required
             autocomplete="off"
@@ -23,7 +24,7 @@
           />
           <input type="submit" class="submit-button" />
         </form>
-        <div class="dj-answer">Your answer will show here</div>
+        <div class="dj-answer" id="dj-answer-generated"></div>
       </main>
     </div>
     <footer>
