@@ -1,5 +1,4 @@
 function displayDjAnswer(response) {
-  console.log("dj answer generated");
   new Typewriter("#dj-answer-generated", {
     strings: response.data.answer,
     autoStart: true,
@@ -21,10 +20,6 @@ function generateDj(event) {
   let djElement = document.querySelector("#dj-answer-generated");
   djElement.classList.remove("hidden");
   djElement.innerHTML = `<span class="blink">⌛</span> Generating answer for you about ${instructionsInputs.value}`;
-
-  console.log("Generating Dj Answer");
-  console.log(`Prompt: ${prompt}`);
-  console.log(`Context: ${context}`);
 
   axios.get(apiURL).then(displayDjAnswer);
 }
