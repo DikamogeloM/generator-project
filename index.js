@@ -18,9 +18,14 @@ function generateDj(event) {
   let prompt = `Generate a DJ answer ${instructionsInputs.value}`;
   let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  let djElement = document.querySelector("#dj-answer-generated");
+  djElement.classList.remove("hidden");
+  djElement.innerHTML = `<span class="blink">⌛</span> Generating answer for you about ${instructionsInputs.value}`;
+
   console.log("Generating Dj Answer");
   console.log(`Prompt: ${prompt}`);
   console.log(`Context: ${context}`);
+
   axios.get(apiURL).then(displayDjAnswer);
 }
 

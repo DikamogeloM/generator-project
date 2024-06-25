@@ -14,19 +14,25 @@
         <h1>AI Dj Generator</h1>
       </header>
       <main>
-        <form id="dj-generator-form">
-          <input
-            type="text"
-            placeholder="Enter your question (e.g: Dj Cue Button)"
-            autofocus
-            required
-            autocomplete="off"
-            class="instructions"
-            id="user-instructions"
-          />
-          <input type="submit" class="submit-button" />
-        </form>
-        <div class="dj-answer" id="dj-answer-generated"></div>
+        <div class="form-container">
+          <form id="dj-generator-form">
+            <input
+              type="text"
+              placeholder="Enter a question about anything DJ related"
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-instructions"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <small class="hint"
+            >Start your question with DJ and write the topic. E.g: Dj cue
+            button, Dj headphones, Dj Bpm</small
+          >
+        </div>
+        <div class="dj-answer hidden" id="dj-answer-generated"></div>
       </main>
     </div>
     <footer>

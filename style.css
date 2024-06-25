@@ -39,11 +39,20 @@ h1 {
   text-align: center;
 }
 
-form {
-  padding: 20px 40px;
-  border-radius: 16px;
-  display: flex;
+.form-container {
   margin-bottom: 30px;
+  border-radius: 16px;
+  padding: 20px 40px;
+}
+
+form {
+  display: flex;
+}
+
+.hint {
+  line-height: 1.5;
+  opacity: 0.6;
+  font-size: 12.5px;
 }
 
 .instructions {
@@ -81,8 +90,21 @@ form {
   border-radius: 16px;
 }
 
+.hidden {
+  display: none;
+}
+
 footer {
   text-align: center;
   font-size: 13.5px;
   margin-top: 30px;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+.blink {
+  animation: blink 1s step-start 0s infinite;
 }
